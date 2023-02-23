@@ -1,22 +1,23 @@
 <script>
   (function() {
-    var koa_embed_key = "{{settings.koaEmbedId}}";
-    var koa_embed_style = "{{settings.koaEmbedStyle}}";
+    var koa_embed_key = '{{settings.koaEmbedId}}';
+    var koa_embed_style = '{{settings.koaEmbedStyle}}';
     if (!koa_embed_style) {
       console.error('Warning: No styles is defined. Please configure it in the apps admin.');
       return
     }
       
-      var keyWord = koa_embed_key != "" ? koa_embed_key : "kingOfApp";
+      var keyWord = koa_embed_key != '' ? koa_embed_key : 'kingOfApp';
       const urlParams = new URLSearchParams(window.location.search);
       const myParam = urlParams.get(keyWord);
       if (myParam) {
           localStorage.setItem(keyWord, myParam);
       }
-      if (localStorage.getItem(keyWord) && localStorage.getItem(keyWord) === "true") {
-          var css = koa_embed_style != "" ? koa_embed_style : 'header, footer{ display:none } .elegantshop-products-wrapper{opacity: 1 !important;}';
+      if (localStorage.getItem(keyWord) && localStorage.getItem(keyWord) === 'true') {
+          var css = koa_embed_style != '' ? koa_embed_style : 'header, footer{ display:none }';
           addStyle();
       }
+      /*function to add code to head*/
       function addStyle() {
           var head = document.head || document.getElementsByTagName('head')[0];
           var style = document.createElement('style');
@@ -29,5 +30,6 @@
               style.appendChild(document.createTextNode(css));
           }
       }
+
   })()
 </script>
