@@ -1,7 +1,7 @@
 <script>
   (function() {
     var koa_embed_key = '{{settings.koaEmbedId}}';
-    var koa_embed_style = '{{settings.koaEmbedStyle}}';
+    var koa_embed_style = decodeURIComponent('{{settings.koaEmbedStyle}}');
     if (!koa_embed_style) {
       console.error('Warning: No styles is defined. Please configure it in the apps admin.');
       return
