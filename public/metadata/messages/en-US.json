@@ -1,11 +1,12 @@
 {
-  "name": "",
-  "headline": "",
-  "overview": "",
-  "features": [],
-  "additionalInformation": "",
-  "websiteURL": "https://vtex.com/",
+  "name": "Vtex to mobile app KOA App Builder",
+  "headline": "Transform your Vtex website into an app",
+  "overview": "Transform your Vtex website into an app",
+  "features": [
+    "Add css to your website to prepare for the app"
+  ],
+  "websiteURL": "https://kingofapp.com/",
   "support": {
-    "url": "https://support.vtex.com/hc/requests"
+    "url": "https://kingofapp.com/es/contratar-ticket/"
   }
 }

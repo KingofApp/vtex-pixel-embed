@@ -193,3 +193,7 @@ l.  Use the APP solely for the purpose expressly provided in these Terms.
 12.4. The Parties agree that these Terms shall be governed by and construed in accordance with the laws indicated in the Master Services Agreement executed by and between User and VTEX, and all controversies resulting out of these Terms shall be resolved in accordance with the conflict resolution method indicated in the respective Master Services Agreement.
 
 12.5. The waiver in the event of any nonperformance or delay in the performance of any obligations set forth in these Terms shall not constitute novation or affect such rights, which may be exercised at any time, nor shall it imply the amendment of the conditions set forth in these Terms.
+
+### 13. KING OF APP
+13.1. In these Terms, when the user use this plugin, at the same time, he will accept the terms and conditions from https://kingofapp.com/en/terms-and-conditions/
+13.2 User agrees with King of App privacy policies  from  https://kingofapp.com/en/privacy-policy/
