@@ -1,0 +1,12 @@
+{
+    "memory": 256,
+    "timeout": 2,
+    "minReplicas": 2,
+    "maxReplicas": 4,
+    "routes": {
+      "getMenu": {
+        "path": "/_v/menu",
+        "public": true
+      }
+    }
+  }
