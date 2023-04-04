@@ -11,9 +11,7 @@
     },
     "free": true,
     "type": "free",
-    "availableCountries": [
-      "*"
-    ]
+    "availableCountries": ["*"]
   },
   "policies": [
     {
@@ -25,6 +23,12 @@
       "effect": "allow"
     }
   ],
+  "modules": {
+    "koa-menu": {
+      "route": "koa-menu",
+      "path": "./koa-menu"
+    }
+  },
   "builders": {
     "react": "3.x",
     "store": "0.x",
@@ -34,7 +38,8 @@
   },
   "dependencies": {
     "vtex.pixel-interfaces": "1.x",
-    "vtex.menu": "2.x"
+    "vtex.menu": "2.x",
+    "@vtex/api": "0.x"
   },
   "settingsSchema": {
     "title": "KOA embed",
