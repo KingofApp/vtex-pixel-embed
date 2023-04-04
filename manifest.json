@@ -39,7 +39,7 @@
   "dependencies": {
     "vtex.pixel-interfaces": "1.x",
     "vtex.menu": "2.x",
-    "@vtex/api": "^6.45.15"
+    "@vtex/api": "^6.x"
   },
   "settingsSchema": {
     "title": "KOA embed",
