@@ -13,12 +13,6 @@
     "type": "free",
     "availableCountries": ["*"]
   },
-  "modules": {
-    "koa-menu": {
-      "route": "node/koa-menu",
-      "path": "./node/koa-menu"
-    }
-  },
   "builders": {
     "react": "3.x",
     "store": "0.x",
