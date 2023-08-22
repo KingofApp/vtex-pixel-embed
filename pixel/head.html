@@ -6,10 +6,12 @@
       console.error('Warning: No styles is defined. Please configure it in the apps admin.');
       return
     }
+
+      const lSprefix = "kingofapppartneres.koaembed"
+      var keyWord = `${lSprefix}:${koa_embed_key != '' ? koa_embed_key : 'kingOfApp'}`;
       
-      var keyWord = koa_embed_key != '' ? koa_embed_key : 'kingOfApp';
       const urlParams = new URLSearchParams(window.location.search);
-      const myParam = urlParams.get(keyWord);
+      const myParam = urlParams.get(keyWord.replace(lSprefix + ":", ""));
       if (myParam) {
           localStorage.setItem(keyWord, myParam);
       }
