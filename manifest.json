@@ -13,6 +13,16 @@
     "type": "free",
     "availableCountries": ["*"]
   },
+  "policies": [
+    {
+      "name": "catalog",
+      "effect": "allow"
+    },
+    {
+      "name": "storefront",
+      "effect": "allow"
+    }
+  ],
   "modules": {
     "koa-menu": {
       "route": "node/koa-menu",
@@ -23,10 +33,12 @@
     "react": "3.x",
     "store": "0.x",
     "pixel": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "node": "6.x"
   },
   "dependencies": {
-    "vtex.pixel-interfaces": "1.x"
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.menu": "2.x"
   },
   "settingsSchema": {
     "title": "KOA embed",
