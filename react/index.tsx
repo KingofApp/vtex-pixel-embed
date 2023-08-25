@@ -1,10 +1,8 @@
 import { canUseDOM } from 'vtex.render-runtime'
-import { useRenderSession, useUpdateSession } from 'vtex.session-client'
+import { useUpdateSession } from 'vtex.session-client'
 
 
-import type { PixelMessage } from './typings/events'
-
-export function handleEvents(e: PixelMessage) {
+export function handleEvents() {
 
   const updateSession = useUpdateSession()
 
@@ -15,20 +13,6 @@ export function handleEvents(e: PixelMessage) {
             Checkout: { 'sameSite'= 'None')
 
           }
-
-
-  switch (e.data.eventName) {
-    case 'vtex:pageView': {
-      const pageTitle = e.data.pageTitle;
-      console.log(`Page view event: ${pageTitle}`);
-      break
-    }
-
-    default: {
-      console.log(`Unrecognized event received: ${e.data.eventName}`);
-      break
-    }
-  }
 }
 
 if (canUseDOM) {
