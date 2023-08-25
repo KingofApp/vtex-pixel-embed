@@ -10,7 +10,7 @@ export function handleEvents() {
 
           variables: {
 
-            Checkout: { 'sameSite'= 'None')
+            Checkout: { 'sameSite': 'None')
 
           }
 }
