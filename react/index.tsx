@@ -1,20 +1,14 @@
-import { canUseDOM } from 'vtex.render-runtime'
 import { useUpdateSession } from 'vtex.session-client'
 
 
 export function handleEvents() {
-
   const updateSession = useUpdateSession()
 
-        updateSession({
+  updateSession({
 
-          variables: {
-
-            Checkout: { 'sameSite': 'None')
-
-          }
+    variables: {
+      Checkout: { 'sameSite': 'None' }
+    }
+  })
 }
 
-if (canUseDOM) {
-  window.addEventListener('message', handleEvents)
-}
