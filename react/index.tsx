@@ -6,10 +6,6 @@ import type { PixelMessage } from './typings/events'
 
 export function handleEvents(e: PixelMessage) {
 
-  const { session } = useRenderSession()
-
-  console.log({ session })
-
   const updateSession = useUpdateSession()
 
         updateSession({
