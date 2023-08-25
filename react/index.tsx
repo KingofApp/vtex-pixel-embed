@@ -1,9 +1,6 @@
 import { useUpdateSession } from 'vtex.session-client'
 
-
-import type { PixelMessage } from './typings/events'
-
-export function handleEvents(e: PixelMessage) {
+export function handleEvents() {
   const updateSession = useUpdateSession();
 
   updateSession({
